@@ -2,6 +2,7 @@
 
 namespace Spatie\CollectionMacros\Macros;
 
+use Illuminate\Support\ItemNotFoundException;
 use Spatie\CollectionMacros\Exceptions\CollectionItemNotFound;
 
 /**
@@ -16,11 +17,12 @@ class FirstOrFail
     public function __invoke()
     {
         return function () {
-            if (! is_null($item = $this->first())) {
-                return $item;
-            }
+            throw new \Exception('No items found in collection.');
+            // if (! is_null($item = $this->first())) {
+            //     return $item;
+            // }
 
-            throw new CollectionItemNotFound('No items found in collection.');
+            // throw new CollectionItemNotFound('No items found in collection.');
         };
     }
 }

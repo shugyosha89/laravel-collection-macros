@@ -41,7 +41,6 @@ class CollectionMacroServiceProvider extends ServiceProvider
             'none' => \Spatie\CollectionMacros\Macros\None::class,
             'paginate' => \Spatie\CollectionMacros\Macros\Paginate::class,
             'parallelMap' => \Spatie\CollectionMacros\Macros\ParallelMap::class,
-            'pluckMany' => \Spatie\CollectionMacros\Macros\PluckMany::class,
             'pluckToArray' => \Spatie\CollectionMacros\Macros\PluckToArray::class,
             'prioritize' => \Spatie\CollectionMacros\Macros\Prioritize::class,
             'rotate' => \Spatie\CollectionMacros\Macros\Rotate::class,
