@@ -37,7 +37,6 @@ class CollectionMacroServiceProvider extends ServiceProvider
             'head' => \Spatie\CollectionMacros\Macros\Head::class,
             'ifAny' => \Spatie\CollectionMacros\Macros\IfAny::class,
             'ifEmpty' => \Spatie\CollectionMacros\Macros\IfEmpty::class,
-            'insertAt' => \Spatie\CollectionMacros\Macros\InsertAt::class,
             'ninth' => \Spatie\CollectionMacros\Macros\Ninth::class,
             'none' => \Spatie\CollectionMacros\Macros\None::class,
             'paginate' => \Spatie\CollectionMacros\Macros\Paginate::class,
